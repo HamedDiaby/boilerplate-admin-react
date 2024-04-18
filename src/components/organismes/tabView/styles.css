@@ -1,0 +1,24 @@
+.p-tabview-nav {
+    justify-content: center;
+    /* border-color: red; */
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    /* color: yellowgreen; */
+}
+
+.p-tabview .p-tabview-nav .p-tabview-ink-bar {
+    /* background-color: yellowgreen; */
+}
+
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    /* color: blue; */
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* border-color: red; */
+}
+
+.p-tabview-title {
+    margin-right: 5px;
+}

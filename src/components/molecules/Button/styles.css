@@ -1,0 +1,30 @@
+@import url('../../themes/colors.css');
+
+.td_button_base {
+    outline: none;
+    border: none;
+}
+.ad_primary {
+    background-color: var(--ad_color_primary) !important;
+    color: #fff;
+}
+.ad_secondary {
+    background-color: var(--ad_color_secondary);
+    color: #fff;
+}
+.ad_success {
+    background-color: var(--ad_color_success);
+    color: #fff;
+}
+.ad_info {
+    background-color: var(--ad_color_info);
+    color: #fff;
+}
+.ad_warning {
+    background-color: var(--ad_color_warning);
+    color: #2e323f;
+}
+.ad_danger {
+    background-color: var(--ad_color_danger);
+    color: #fff;
+}

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "AvenirNextBold";
+    src: local("AvenirNextBold"),
+     url("../../../themes/fonts/avenirs/AvenirNextCyr-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "AvenirNextRegular";
+    src: local("AvenirNextRegular"),
+     url("../../../themes/fonts/avenirs/AvenirNextCyr-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "AvenirNextLight";
+    src: local("AvenirNextLight"),
+     url("../../../themes/fonts/avenirs/AvenirNextCyr-Light.ttf") format("truetype");
+}
+
+.ft_paragraph {
+    margin: 0%;
+}
+
+.ft_paragraph_bold {
+    font-family: 'AvenirNextBold';
+}
+.ft_paragraph_regular {
+    font-family: 'AvenirNextRegular';
+}
+.ft_paragraph_light {
+    font-family: 'AvenirNextLight';
+}

@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.p-datatable .p-datatable-header, .p-paginator {
+  background-color: transparent;
+  border: none;
+}
+.p-paginator {
+  margin-top: 20px;
+}
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background-color: #ec4dbc;
+  color: #fff;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  background-color: transparent;
+  color: #868c9b;
+  border-top: solid 1px #e5e7eb;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.p-datatable .p-datatable-tbody > tr {
+  background-color: transparent;
+  color: #fff;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  /* text-align: center; */
+}

@@ -1,0 +1,10 @@
+:root {
+    --ad_color_bg: linear-gradient(180deg, #2e323f, #0a061a);
+
+    --ad_color_primary: #ec4dbc;
+    --ad_color_secondary: #a0a3ad;
+    --ad_color_success: #0bd18a;
+    --ad_color_info: #873efe;
+    --ad_color_warning: #eee500;
+    --ad_color_danger: #fc6161;
+}
