@@ -35,6 +35,7 @@
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .ad_chats_leftSection_subContainer_avatar {
     border: solid 2px #fff;

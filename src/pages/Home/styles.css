@@ -1,0 +1,11 @@
+.ad_chart_section_container {
+    margin-top: 30px;
+}
+
+.ad_group_chart_container {
+    display: flex;
+    justify-content: space-between;
+}
+.ad_chart_width {
+    width: 310px;
+}

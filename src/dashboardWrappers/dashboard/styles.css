@@ -84,6 +84,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
+    height: 85vh;
+    overflow-y: scroll;
 }
 
 .ad_dashboard_mobile_right_sidebar {
