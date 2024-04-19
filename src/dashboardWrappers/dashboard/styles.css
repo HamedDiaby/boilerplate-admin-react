@@ -71,6 +71,10 @@
 }
 .ad_dashboard_align_flex_end {
     justify-content: flex-end;
+    margin-right: 20px;
+}
+.ad_dashboard_align_flex_end_chats_icon {
+    margin-right: 20px;
 }
 .ad_dashboard_children_header_Title {
     margin-left: 20px !important;
@@ -80,4 +84,14 @@
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
+}
+
+.ad_dashboard_mobile_right_sidebar {
+    width: 30%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: var(--ad_color_bg);
+}
+.ad_dashboard_mobile_right_sidebar_wLarge {
+    width: 75%;
 }

@@ -5,6 +5,7 @@ import { IInput } from "./interface";
 import { InputText } from 'primereact/inputtext';
 import { InputTextarea } from 'primereact/inputtextarea';
 import { Password } from 'primereact/password';
+import { InputNumber } from 'primereact/inputnumber';
 
 export const Input:React.FC<IInput> = ({
     value,
@@ -41,10 +42,22 @@ export const Input:React.FC<IInput> = ({
         )
     }
 
+    if(inputType === 'number'){
+        return (
+            <InputNumber 
+                placeholder={placeholder}
+                value={Number(value)} 
+                onChange={(e) => onChange(String(e.value))}
+                className="tf_input"
+                inputClassName="tf_input tf_inputClassName"
+                style={{width: width}}
+            />
+        )
+    }
+
     return (
         <InputText 
             size='small'
-            keyfilter={inputType === 'number' ? 'int' : 'alphanum'}
             placeholder={placeholder}
             value={value} 
             onChange={(e) => onChange(e.target.value)}

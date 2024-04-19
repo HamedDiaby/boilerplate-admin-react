@@ -1,4 +1,4 @@
-import { signinRequest } from "@data/signin";
+import { logOut, signinRequest } from "@data/signin";
 import { AppDispatch } from "@data/store";
 import { SignInActionPayloadRequest } from "@utilities/types";
 import { useCallback } from "react";
@@ -20,9 +20,14 @@ export const useSigninDispatch = () => {
         dispatch(signinRequest(signinData));
     }, [dispatch]);
 
+    const onLogout = useCallback(()=> {
+        dispatch(logOut());
+    }, [dispatch]);
+
     // FR: Retourne l'objet contenant la fonction onSignin.
     // EN: Returns the object containing the onSignin function.
     return {
-        onSignin
+        onSignin,
+        onLogout
     };
 };

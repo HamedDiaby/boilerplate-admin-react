@@ -1,0 +1,18 @@
+@import url('../../themes/colors.css');
+
+.p-toast .p-toast-message.p-toast-message-warn {
+    background-color: transparent;
+    background: var(--ad_color_bg);
+}
+.p-toast .p-toast-message.p-toast-message-success {
+    background-color: transparent;
+    background: var(--ad_color_bg);
+}
+.p-toast .p-toast-message.p-toast-message-error {
+    background-color: transparent;
+    background: var(--ad_color_bg);
+}
+.p-toast .p-toast-message.p-toast-message-info {
+    background-color: transparent;
+    background: var(--ad_color_bg);
+}

@@ -1,0 +1,109 @@
+.ad_chats_container {
+    display: flex;
+    align-items: flex-start;
+    height: 85vh;
+    position: relative;
+}
+
+.ad_chats_leftSection {
+    width: 300px;
+    height: 85vh;
+    margin-right: 20px;
+}
+.ad_chats_leftSection_subContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.ad_chats_leftSection_subContainer_topDivider {
+    border-top: solid 1px #a0a3ad;
+    padding: 20px;
+}
+.ad_chats_leftSection_userList_container {
+    width: 100%;
+    margin-top: 20px;
+    height: 45vh;
+    overflow-y: scroll;
+}
+.ad_ad_chats_leftSection_userItem_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px #fff;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.ad_chats_leftSection_subContainer_avatar {
+    border: solid 2px #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.ad_chats_rightSection {
+    flex: 1;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+.ad_chats_rightSection_chat_header {
+    padding: 20px;
+}
+.ad_chats_rightSection_chat_header_txt_online {
+    color: #0bd18a;
+}
+.ad_chats_rightSection_chat_header_txt_offline {
+    color: #fc6161;
+}
+.ad_chats_rightSection_chat_container {
+    height: 70vh;
+    border-top: solid 1px #a0a3ad;
+    border-bottom: solid 1px #a0a3ad;
+    overflow-y: scroll;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.ad_chats_rightSection_chat_item_sender_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+.ad_chats_rightSection_chat_item_receiver_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.ad_chats_rightSection_chat_item_centent {
+    max-width: 80%;
+    border: solid 1px #a0a3ad;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.ad_sender_chat {
+    border: solid 1px #ec4dbc;
+    color: #ec4dbc;
+}
+.ad_chats_rightSection_chat_item_date {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.ad_sender_date {
+    color: #ec4dbc;
+}
+.ad_chats_rightSection_chat_input_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}

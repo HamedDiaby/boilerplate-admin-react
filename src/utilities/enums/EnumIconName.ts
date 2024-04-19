@@ -14,4 +14,6 @@ export enum EnumIconName {
     users = 'pi pi-users',
     home = 'pi pi-home',
     noAccess = 'pi pi-ban',
+    chats = 'pi pi-comments',
+    send = 'pi pi-send',
 }

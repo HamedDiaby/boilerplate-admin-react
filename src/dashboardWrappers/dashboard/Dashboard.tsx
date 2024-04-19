@@ -9,6 +9,7 @@ import { Icon, Paragraph, Title } from "@components";
 import { EnumIconName, NavigationPathsEnum } from "@utilities/enums";
 
 import ReactLogo from '@assets/reactLogo.svg';
+import { Account, Chats } from "./components";
 
 export const Dashboard:React.FC<IDashboard> = ({
     activePagePath,
@@ -20,6 +21,8 @@ export const Dashboard:React.FC<IDashboard> = ({
     const {isMobile} = useScreenSize();
 
     const [displayLeftMenu, setDisplayLeftMenu] = useState<boolean>(!isMobile);
+    const [displayUserProfil, setDisplayUserProfil] = useState<boolean>(false);
+    const [displayUserChats, setDisplayUserChats] = useState<boolean>(false);
 
     const leftTabNavItems = useMemo(()=> {
         return [
@@ -47,9 +50,17 @@ export const Dashboard:React.FC<IDashboard> = ({
         }
     }, [userData, navigateTo]);
 
+    const toggleDisplayUserProfile = useCallback(()=> {
+        setDisplayUserProfil(!displayUserProfil)
+    }, [displayUserProfil]);
+
     const toggleDisplayLeftMenu = useCallback(()=> {
         setDisplayLeftMenu(!displayLeftMenu);
     }, [displayLeftMenu]);
+
+    const toggleDisplayUserChats = useCallback(()=> {
+        setDisplayUserChats(!displayUserChats)
+    }, [displayUserChats]);
 
     const renderLeftTabNav = useCallback(()=> {
         if(!displayLeftMenu) return;
@@ -108,9 +119,20 @@ export const Dashboard:React.FC<IDashboard> = ({
                     </div>
 
                     <div className="ad_dashboard_children_header_subContainer ad_dashboard_align_flex_end">
+                        <div className="ad_dashboard_align_flex_end_chats_icon">
+                            <Icon 
+                                iconName={EnumIconName.chats}
+                                colors="#c8ccd8"
+                                size={20}
+                                onIconPress={toggleDisplayUserChats}
+                            />
+                        </div>
+
                         <Icon 
                             iconName={EnumIconName.user}
                             colors="#c8ccd8"
+                            size={20}
+                            onIconPress={toggleDisplayUserProfile}
                         />
                     </div>
                 </div>
@@ -120,7 +142,12 @@ export const Dashboard:React.FC<IDashboard> = ({
                 </div>
             </div>
         )
-    }, [children, isMobile, toggleDisplayLeftMenu]);
+    }, [
+        children, isMobile, 
+        toggleDisplayUserChats,
+        toggleDisplayLeftMenu, 
+        toggleDisplayUserProfile,
+    ]);
 
     return (
         <div className="ad_dashboard_container">
@@ -138,6 +165,24 @@ export const Dashboard:React.FC<IDashboard> = ({
                     </Sidebar>
                 )
             }
+
+            <Sidebar
+                position='right'
+                visible={displayUserProfil}
+                onHide={toggleDisplayUserProfile}
+                className="ad_dashboard_mobile_right_sidebar"
+            >
+                <Account />
+            </Sidebar>
+
+            <Sidebar
+                position='right'
+                visible={displayUserChats}
+                onHide={toggleDisplayUserChats}
+                className="ad_dashboard_mobile_right_sidebar ad_dashboard_mobile_right_sidebar_wLarge"
+            >
+                <Chats />
+            </Sidebar>
         </div>
     )
 }
